@@ -26,7 +26,7 @@ public class MetricsOneHomePage {
      By LogOutButton = By.xpath("//div[2]/div/div/ul/li[3]");
      By Location = By.xpath("//div/div[1]/div[2]/div[1]/a[1]");
      By KPI = By.xpath("//div/div[1]/div[2]/div[1]/a[2]");
-     By Allentown = By.xpath("//div/div[1]/div[2]/div[2]/div[2]/div[2]/div[11]/a");
+     By Allentown = By.xpath("//div/div[1]/div[2]/div[2]/div[2]/div[2]/div[12]/a");
 
 
 public MetricsOneHomePage(WebDriver driver){

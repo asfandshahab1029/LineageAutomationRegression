@@ -23,7 +23,7 @@ public class KpiTab {
     By Turnover = By.xpath("//div/div[1]/div[2]/div[2]/div/div[2]/div[2]/div/div/div[4]/div[2]");
     //Operations
     By Energy = By.xpath("//div/div[1]/div[2]/div[2]/div/div[3]/div[2]/div/div/div[1]/div[2]");
-    By InventoryAdjustments = By.xpath("//div/div[1]/div[2]/div[2]/div/div[3]/div[2]/div/div/div[1]");
+    By InventoryAdjustments = By.xpath("//div/div[1]/div[2]/div[2]/div/div[3]/div[2]/div/div/div[2]/div[2]");
     By InventoryHealth = By.xpath("//div/div[1]/div[2]/div[2]/div/div[3]/div[2]/div/div/div[3]/div[2]");
     By InventoryTurns = By.xpath("//div/div[1]/div[2]/div[2]/div/div[3]/div[2]/div/div/div[3]/div[2]");
     By PutawayCompliance = By.xpath("//div/div[1]/div[2]/div[2]/div/div[3]/div[2]/div/div/div[5]/div[2]");
