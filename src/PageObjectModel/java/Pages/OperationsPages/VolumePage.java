@@ -18,9 +18,9 @@ import java.util.concurrent.TimeUnit;
 public class VolumePage {
     WebDriver driver;
 
-    By Inbound = By.xpath("//div[2]/div/div/div/div/label[1]/input");
-    By Outbound = By.xpath("//div[2]/div/div/div/div/label[2]/input");
-    By Total = By.xpath("//div[2]/div/div/div/div/label[3]/input");
+    By Inbound = By.xpath("//html/body/div[2]/div/div/div/div/label[1]/input");
+    By Outbound = By.xpath("//html/body/div[2]/div/div/div/div/label[2]/input");
+    By Total = By.xpath("//html/body/div[2]/div/div/div/div/label[3]/input");
 
     By AvgCasesInfo = By.xpath("//div/div[2]/div[2]/div[1]/div/div[2]/div[2]");
     By AvgWeightPerPalletsInfo = By.xpath("//div/div[2]/div[2]/div[1]/div/div[3]/div[2]");
@@ -45,6 +45,7 @@ public class VolumePage {
     By Cumulative = By.xpath("//div/div[2]/div[2]/div[2]/div/div/div[1]/div[2]/div/div[3]/div[2]/label[2]/input");
 
     //TableSettings
+    By TableSettings = By.xpath("//div/div[2]/div[2]/div[3]/div/div/div[1]/div[2]/button");
     By Units = By.xpath("//div/div[2]/div[2]/div[3]/div/div/div[1]/div[2]/div/div[2]/div[2]/label[1]/input");
     By Finished = By.xpath("//div/div[2]/div[2]/div[3]/div/div/div[1]/div[2]/div/div[2]/div[2]/label[2]/input");
     By Projected = By.xpath("//div/div[2]/div[2]/div[3]/div/div/div[1]/div[2]/div/div[2]/div[2]/label[3]/input");
@@ -71,7 +72,7 @@ public class VolumePage {
     By UserSettingsModal = By.xpath("//div/div[1]/div[1]/div/div[1]/button[1]");
     By UserSettingsCancel = By.xpath("//div[2]/div/div[3]/button[1]");
     By UserSettingsSave = By.xpath("//div[2]/div/div[3]/button[2]");
-    By UserSettingsX = By.xpath("//div[2]/div/div[1]/button/svg");
+    By UserSettingsX = By.xpath("//div[2]/div/div[1]/button");
     By DMY = By.xpath("//div[2]/div/div[2]/div/form/div/div[1]/div[4]/label/input");
     By MDY = By.xpath("//div[2]/div/div[2]/div/form/div/div[1]/div[3]/label/input");
     By YMD = By.xpath("//div[2]/div/div[2]/div/form/div/div[1]/div[5]/label/input");
@@ -81,7 +82,7 @@ public class VolumePage {
     By Kilograms = By.xpath("//div[2]/div/div[2]/div/form/div/div[3]/div[2]/div[2]/label");
 
     //Log Out
-    By LogOutButton = By.xpath("//div[2]/div/div/ul/li[3]");
+    By LogOutButton = By.xpath("//html/body/div[3]/div/div/ul/li[3]");
     By Arrow = By.xpath("//div/div[1]/div[1]/div/div[1]/button[4]");
 
 
@@ -96,6 +97,8 @@ public class VolumePage {
         driver.findElement(By.xpath("//div/div[2]/div[1]/div/div[1]/div/button")).click();
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.findElement(Inbound).click();
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+
     }
 
     public void SelectOutbound() {
@@ -184,6 +187,11 @@ public class VolumePage {
         driver.findElement(Cumulative).click();
     }
     //Table Settings
+    public void ClickTableSettings() {
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        driver.findElement(TableSettings).click();
+    }
+
     public void SelectUnits() {
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.findElement(Units).click();
@@ -274,7 +282,7 @@ public class VolumePage {
     public void  LogOut(){
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.findElement(Arrow).click();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.findElement(LogOutButton).click();
     }
     //User Settings Modal

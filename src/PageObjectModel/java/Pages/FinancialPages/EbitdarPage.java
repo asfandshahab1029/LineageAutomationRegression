@@ -46,7 +46,7 @@ public class EbitdarPage {
     By Month = By.xpath("//div[3]/div/div/div/div/label[1]/input");
     By Year = By.xpath("//html/body/div[3]/div/div/div/div/label[2]/input");
 
-    By LogOutButton = By.xpath("//div[2]/div/div/ul/li[3]");
+    By LogOutButton = By.xpath("//html/body/div[3]/div/div/ul/li[3]");
     By Arrow = By.xpath("//div/div[1]/div[1]/div/div[1]/button[4]");
 
 

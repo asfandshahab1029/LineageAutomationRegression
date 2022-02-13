@@ -31,7 +31,7 @@ public class LoginSmokeTests {
 
     }
     @Test
-    public void smokeTestAsHanSolo()  {
+    public void SmokeTestAsHanSolo()  {
 
         System.setProperty("webdriver.chrome.driver", "chromedriver");
         WebDriver driver = new ChromeDriver();
@@ -57,7 +57,7 @@ public class LoginSmokeTests {
 
     }
     @Test
-    public void smokeTestAsPrincessLeia()  {
+    public void SmokeTestAsPrincessLeia()  {
 
         System.setProperty("webdriver.chrome.driver", "chromedriver");
         WebDriver driver = new ChromeDriver();
@@ -88,7 +88,7 @@ public class LoginSmokeTests {
 
     }
     @Test
-    public void smokeTestAsLukeSkywalker()  {
+    public void SmokeTestAsLukeSkywalker()  {
 
         System.setProperty("webdriver.chrome.driver", "chromedriver");
         WebDriver driver = new ChromeDriver();
